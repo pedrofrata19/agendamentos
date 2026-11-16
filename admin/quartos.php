@@ -28,7 +28,7 @@
   <main id="conteudo-principal" class="container-hr">
     <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
       <h1 class="text-2xl md:text-3xl font-bold text-gray-900">Administração de quartos</h1>
-      <button type="button" class="btn btn-primary text-white w-full sm:w-auto">+ Novo quarto</button>
+      <a href="quarto-novo.php" class="btn btn-primary text-white w-full sm:w-auto">+ Novo quarto</a>
     </div>
     <div class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden">
       <div class="overflow-x-auto">
