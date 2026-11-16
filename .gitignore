@@ -1,0 +1,4 @@
+node_modules/
+.env
+config/config.php
+/controle/node_modules/

@@ -1,0 +1,11 @@
+{
+  "name": "hotelreserva",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HotelReserva MVP - prototipo",
+  "scripts": {
+    "test": "echo \"No tests configured\""
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
