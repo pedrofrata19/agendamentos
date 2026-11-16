@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="700" viewBox="0 0 1050 700" font-family="Arial, Helvetica, sans-serif">
+  <style>
+    .title{font-size:22px;font-weight:bold;fill:#111}
+    .subtitle{font-size:14px;fill:#444}
+    .label{font-size:13px;fill:#222}
+    .small{font-size:12px;fill:#333}
+    .muted{font-size:12px;fill:#666}
+    .btn{font-size:13px;font-weight:bold;fill:#fff}
+    .link{font-size:12px;fill:#2457b2}
+    .header{fill:#f5f5f5;stroke:#999}
+    .box{fill:#fff;stroke:#888}
+    .card{fill:#f9fafb;stroke:#999}
+    .btn-fill{fill:#2f6fed;stroke:#2457b2}
+    .btn-gray{fill:#e5e7eb;stroke:#999}
+    .alert{fill:#fdecea;stroke:#d93025}
+    .ok{fill:#e7f7ee;stroke:#1a7f37}
+    .total{font-size:16px;font-weight:bold;fill:#111}
+  </style>
+  <rect width="100%" height="100%" fill="#fafafa"/>
+  <text x="30" y="40" class="title">T04 — Confirmação de reserva (reserva.php)</text>
+  <text x="30" y="62" class="subtitle">Viajante | Requer sessão | Objetivo: revisar dados e confirmar reserva (F3)</text>
+
+  <!-- Mobile main -->
+  <text x="30" y="100" class="label" font-weight="bold">Mobile (resumo para confirmação)</text>
+  <rect x="30" y="115" width="340" height="540" rx="18" class="box"/>
+  <rect x="30" y="115" width="340" height="50" rx="18" class="header"/>
+  <rect x="30" y="147" width="340" height="18" fill="#f5f5f5"/>
+  <text x="50" y="146" class="label">← Voltar   Confirmar reserva</text>
+
+  <text x="55" y="195" class="label" font-weight="bold">Resumo da reserva</text>
+  <rect x="55" y="208" width="290" height="300" rx="8" class="card"/>
+  <text x="75" y="235" class="small" font-weight="bold">Quarto selecionado (somente leitura)</text>
+  <text x="75" y="255" class="small">Standard — cama casal, ar-condicionado</text>
+  <text x="75" y="273" class="small">Capacidade: 2 hóspedes</text>
+  <text x="75" y="291" class="small">Preço/noite: R$ 200,00</text>
+  <line x1="75" y1="305" x2="325" y2="305" stroke="#ccc"/>
+  <text x="75" y="328" class="small">Check-in: 10/08/2026</text>
+  <text x="75" y="348" class="small">Check-out: 12/08/2026</text>
+  <text x="75" y="368" class="small">Nº de hóspedes: 2</text>
+  <text x="75" y="388" class="small">Noites: 2</text>
+  <line x1="75" y1="402" x2="325" y2="402" stroke="#ccc"/>
+  <text x="75" y="430" class="total">VALOR TOTAL: R$ 400,00</text>
+  <text x="75" y="455" class="muted">(noites × preço/noite)</text>
+  <text x="75" y="490" class="muted">Dados enviados via campos hidden no submit.</text>
+
+  <rect x="55" y="525" width="290" height="42" rx="6" class="btn-fill"/>
+  <text x="125" y="551" class="btn">CONFIRMAR RESERVA</text>
+  <text x="55" y="590" class="link">Voltar (para busca/resultados)</text>
+  <text x="55" y="615" class="muted">Envio: "Confirmando..." (botão desabilitado)</text>
+  <text x="55" y="635" class="muted">Inicial: "Carregando dados da reserva..."</text>
+
+  <!-- States -->
+  <text x="420" y="100" class="label" font-weight="bold">Estados: erro, inválido e sucesso</text>
+  <rect x="420" y="115" width="600" height="210" rx="8" class="box"/>
+  <rect x="440" y="135" width="560" height="70" rx="6" class="alert"/>
+  <text x="455" y="158" class="small" font-weight="bold">! Erro (resumo mantido visível)</text>
+  <text x="455" y="176" class="small">• "Este quarto não está mais disponível para o período selecionado."</text>
+  <text x="455" y="193" class="small">• "Não foi possível criar a reserva. Verifique as datas e o quarto selecionado."</text>
+  <rect x="440" y="215" width="560" height="45" rx="6" fill="#fff3cd" stroke="#b45309"/>
+  <text x="455" y="242" class="small">• "Não foi possível concluir a reserva. Tente novamente."</text>
+  <text x="440" y="285" class="small" font-weight="bold">Estado inválido (sem parâmetros/quarto inexistente):</text>
+  <text x="440" y="305" class="small">"Reserva inválida." + ação [Voltar à busca] (não é lista vazia)</text>
+
+  <rect x="420" y="340" width="600" height="70" rx="8" class="ok"/>
+  <text x="440" y="365" class="small" font-weight="bold">✓ Sucesso</text>
+  <text x="440" y="385" class="small">Grava reserva `confirmada` → redireciona para T05 com "Reserva confirmada com sucesso."</text>
+
+  <!-- Desktop -->
+  <text x="420" y="440" class="label" font-weight="bold">Desktop</text>
+  <rect x="420" y="455" width="600" height="210" rx="8" class="box"/>
+  <rect x="420" y="455" width="600" height="45" class="header"/>
+  <text x="440" y="483" class="label">HotelReserva   Buscar   Olá, Maria</text>
+  <text x="845" y="483" class="small">[Minhas reservas] [Sair]</text>
+  <text x="440" y="520" class="link">← Voltar</text>
+  <rect x="440" y="535" width="560" height="110" rx="8" class="card"/>
+  <text x="460" y="560" class="label" font-weight="bold">Confirmar reserva</text>
+  <text x="460" y="580" class="small">Quarto: Standard (2 hóspedes) — R$ 200,00/noite</text>
+  <text x="460" y="598" class="small">Período: 10/08/2026 a 12/08/2026 (2 noites) | Hóspedes: 2</text>
+  <text x="780" y="598" class="small" font-weight="bold">Total: R$ 400,00</text>
+  <rect x="780" y="608" width="200" height="28" rx="4" class="btn-fill"/>
+  <text x="815" y="627" class="btn">CONFIRMAR RESERVA</text>
+</svg>

@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1150" height="780" viewBox="0 0 1150 780" font-family="Arial, Helvetica, sans-serif">
+  <style>
+    .title{font-size:22px;font-weight:bold;fill:#111}
+    .subtitle{font-size:14px;fill:#444}
+    .label{font-size:13px;fill:#222}
+    .small{font-size:12px;fill:#333}
+    .muted{font-size:12px;fill:#666}
+    .btn{font-size:12px;font-weight:bold;fill:#fff}
+    .btn-dark{font-size:12px;fill:#222}
+    .header{fill:#f5f5f5;stroke:#999}
+    .box{fill:#fff;stroke:#888}
+    .input{fill:#fff;stroke:#999}
+    .card{fill:#fff;stroke:#999}
+    .card-muted{fill:#f3f4f6;stroke:#999}
+    .btn-fill{fill:#2f6fed;stroke:#2457b2}
+    .btn-gray{fill:#e5e7eb;stroke:#999}
+    .btn-warn{fill:#f59e0b;stroke:#b45309}
+    .ok{fill:#e7f7ee;stroke:#1a7f37}
+    .alert{fill:#fdecea;stroke:#d93025}
+    .badge-ok{font-size:11px;font-weight:bold;fill:#1a7f37}
+    .badge-off{font-size:11px;font-weight:bold;fill:#666}
+    th{font-weight:bold}
+  </style>
+  <rect width="100%" height="100%" fill="#fafafa"/>
+  <text x="30" y="40" class="title">T07 — Administração de quartos (admin/quartos.php)</text>
+  <text x="30" y="62" class="subtitle">Admin | Requer sessão (perfil admin) | Objetivo: listar, criar, editar e ativar/desativar quartos (F5)</text>
+
+  <!-- Mobile form + list -->
+  <text x="30" y="100" class="label" font-weight="bold">Mobile (formulário criar/editar + listagem)</text>
+  <rect x="30" y="115" width="360" height="630" rx="18" class="box"/>
+  <rect x="30" y="115" width="360" height="50" rx="18" class="header"/>
+  <rect x="30" y="147" width="360" height="18" fill="#f5f5f5"/>
+  <text x="50" y="146" class="label">≡  Quartos</text>
+  <rect x="290" y="122" width="85" height="26" rx="4" class="btn-fill"/>
+  <text x="305" y="140" class="btn">+ Novo</text>
+
+  <rect x="50" y="178" width="320" height="36" rx="6" class="ok"/>
+  <text x="65" y="201" class="small">✓ Quarto atualizado com sucesso.</text>
+
+  <text x="50" y="235" class="label" font-weight="bold">Editar quarto</text>
+  <rect x="50" y="245" width="320" height="230" rx="8" fill="#f9fafb" stroke="#ccc"/>
+  <text x="65" y="268" class="small">Nome * [ Standard            ]</text>
+  <text x="65" y="293" class="small">Descrição [ Cama casal...     ]</text>
+  <text x="65" y="318" class="small">Capacidade * [ 2 ]  Preço/noite * [200,00]</text>
+  <text x="65" y="343" class="small">Qtd. unidades * [ 3 ]</text>
+  <text x="65" y="368" class="small">[x] Ativo (padrão ativo ao criar)</text>
+  <rect x="65" y="385" width="130" height="30" rx="4" class="btn-gray"/>
+  <text x="80" y="405" class="btn-dark">Cancelar edição</text>
+  <rect x="210" y="385" width="145" height="30" rx="4" class="btn-fill"/>
+  <text x="255" y="405" class="btn">SALVAR</text>
+  <text x="65" y="435" class="muted">Envio: "Salvando..." (desabilitado)</text>
+  <text x="65" y="455" class="muted">Validação: preservar dados preenchidos em erro</text>
+
+  <rect x="50" y="488" width="320" height="95" rx="8" class="card"/>
+  <text x="65" y="512" class="label" font-weight="bold">Standard</text>
+  <rect x="285" y="496" width="70" height="18" rx="9" fill="#e7f7ee" stroke="#1a7f37"/>
+  <text x="298" y="509" class="badge-ok">ATIVO</text>
+  <text x="65" y="532" class="small">Cap: 2 | R$ 200,00/noite | Qtde: 3</text>
+  <rect x="65" y="545" width="80" height="26" rx="4" class="btn-gray"/>
+  <text x="85" y="563" class="btn-dark">Editar</text>
+  <rect x="155" y="545" width="90" height="26" rx="4" class="btn-warn"/>
+  <text x="168" y="563" class="btn">Desativar</text>
+
+  <rect x="50" y="595" width="320" height="95" rx="8" class="card-muted"/>
+  <text x="65" y="619" class="label" font-weight="bold" fill="#555">Família</text>
+  <rect x="275" y="603" width="80" height="18" rx="9" fill="#e5e7eb" stroke="#999"/>
+  <text x="286" y="616" class="badge-off">INATIVO</text>
+  <text x="65" y="639" class="small" fill="#555">Cap: 4 | R$ 350,00/noite | Qtde: 1</text>
+  <rect x="65" y="652" width="80" height="26" rx="4" class="btn-gray"/>
+  <text x="85" y="670" class="btn-dark">Editar</text>
+  <rect x="155" y="652" width="70" height="26" rx="4" class="btn-fill"/>
+  <text x="172" y="670" class="btn">Ativar</text>
+
+  <!-- Messages / states -->
+  <text x="430" y="100" class="label" font-weight="bold">Mensagens e estados</text>
+  <rect x="430" y="115" width="330" height="95" rx="8" class="box"/>
+  <text x="450" y="140" class="small" font-weight="bold">Carregamento / Vazio</text>
+  <text x="450" y="160" class="small">⏳ "Carregando quartos..."</text>
+  <text x="450" y="180" class="small">Vazio: "Nenhum quarto cadastrado." + CTA [Novo quarto]</text>
+
+  <rect x="430" y="225" width="330" height="150" rx="8" class="box"/>
+  <text x="450" y="248" class="small" font-weight="bold">Validações</text>
+  <text x="450" y="268" class="small">• "Informe o nome do quarto."</text>
+  <text x="450" y="286" class="small">• "Capacidade deve ser maior que zero."</text>
+  <text x="450" y="304" class="small">• "Preço deve ser maior que zero."</text>
+  <text x="450" y="322" class="small">• "Quantidade deve ser maior que zero."</text>
+  <text x="450" y="348" class="small" font-weight="bold">Erros:</text>
+  <text x="450" y="366" class="small">"Não foi possível salvar o quarto." / "...alterar o status..."</text>
+
+  <rect x="430" y="390" width="330" height="110" rx="8" class="ok"/>
+  <text x="450" y="415" class="small" font-weight="bold">Sucesso</text>
+  <text x="450" y="435" class="small">"Quarto criado com sucesso."</text>
+  <text x="450" y="453" class="small">"Quarto atualizado com sucesso."</text>
+  <text x="450" y="471" class="small">"Quarto desativado/ativado com sucesso."</text>
+  <text x="450" y="489" class="muted">Formulário limpo/fechado após criar/salvar.</text>
+
+  <!-- Desktop table -->
+  <text x="430" y="535" class="label" font-weight="bold">Desktop (tabela + formulário inline)</text>
+  <rect x="430" y="550" width="690" height="195" rx="8" class="box"/>
+  <rect x="430" y="550" width="690" height="45" class="header"/>
+  <text x="450" y="578" class="label">HotelReserva   Painel   Quartos   Reservas</text>
+  <text x="1055" y="578" class="small">[Sair]</text>
+  <text x="450" y="618" class="label" font-weight="bold">Quartos</text>
+  <rect x="1000" y="600" width="100" height="26" rx="4" class="btn-fill"/>
+  <text x="1015" y="618" class="btn">+ Novo quarto</text>
+  <rect x="450" y="632" width="650" height="36" rx="4" fill="#f9fafb" stroke="#ccc"/>
+  <text x="460" y="655" class="small">[Form criar/editar quando aberto: Nome, Descrição, Cap, Preço, Qtde, Ativo | Cancelar | Salvar]</text>
+  <rect x="450" y="678" width="650" height="26" fill="#f3f4f6" stroke="#ccc"/>
+  <text x="460" y="696" class="small" font-weight="bold">Nome | Cap. | Preço/noite | Qtde | Status | Ações</text>
+  <text x="460" y="718" class="small">Standard | 2 | R$ 200,00 | 3 | Ativo   | [Editar] [Desativar]</text>
+  <text x="460" y="736" class="small" fill="#666">Família  | 4 | R$ 350,00 | 1 | Inativo | [Editar] [Ativar]</text>
+</svg>

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1150" height="700" viewBox="0 0 1150 700" font-family="Arial, Helvetica, sans-serif">
+  <style>
+    .title{font-size:22px;font-weight:bold;fill:#111}
+    .subtitle{font-size:14px;fill:#444}
+    .label{font-size:13px;fill:#222}
+    .small{font-size:12px;fill:#333}
+    .muted{font-size:12px;fill:#666}
+    .btn{font-size:12px;font-weight:bold;fill:#fff}
+    .btn-dark{font-size:12px;fill:#222}
+    .header{fill:#f5f5f5;stroke:#999}
+    .box{fill:#fff;stroke:#888}
+    .card{fill:#fff;stroke:#999}
+    .card-muted{fill:#f3f4f6;stroke:#999}
+    .btn-danger{fill:#d93025;stroke:#b42318}
+    .btn-gray{fill:#e5e7eb;stroke:#999}
+    .ok{fill:#e7f7ee;stroke:#1a7f37}
+    .alert{fill:#fdecea;stroke:#d93025}
+    .badge-ok{font-size:11px;font-weight:bold;fill:#1a7f37}
+    .badge-cancel{font-size:11px;font-weight:bold;fill:#666}
+  </style>
+  <rect width="100%" height="100%" fill="#fafafa"/>
+  <text x="30" y="40" class="title">T08 — Administração de reservas (admin/reservas.php)</text>
+  <text x="30" y="62" class="subtitle">Admin | Requer sessão (perfil admin) | Objetivo: listar todas as reservas e cancelar quando necessário (F5)</text>
+
+  <!-- Mobile -->
+  <text x="30" y="100" class="label" font-weight="bold">Mobile (listagem e ação)</text>
+  <rect x="30" y="115" width="360" height="540" rx="18" class="box"/>
+  <rect x="30" y="115" width="360" height="50" rx="18" class="header"/>
+  <rect x="30" y="147" width="360" height="18" fill="#f5f5f5"/>
+  <text x="50" y="146" class="label">≡  Reservas</text>
+  <text x="320" y="146" class="small">[Sair]</text>
+
+  <text x="50" y="195" class="label" font-weight="bold">Reservas</text>
+  <text x="50" y="214" class="muted">Filtros opcionais (MVP): ausentes — listar todas</text>
+  <rect x="50" y="225" width="320" height="34" rx="6" class="ok"/>
+  <text x="65" y="247" class="small">✓ Reserva cancelada com sucesso.</text>
+
+  <rect x="50" y="272" width="320" height="170" rx="8" class="card"/>
+  <text x="65" y="296" class="label" font-weight="bold">Maria Silva</text>
+  <rect x="270" y="280" width="90" height="18" rx="9" fill="#e7f7ee" stroke="#1a7f37"/>
+  <text x="278" y="293" class="badge-ok">CONFIRMADA</text>
+  <text x="65" y="316" class="small">maria@email.com</text>
+  <text x="65" y="334" class="small">Quarto: Standard</text>
+  <text x="65" y="352" class="small">10/08/2026 → 12/08/2026</text>
+  <text x="65" y="370" class="small">Valor: R$ 400,00</text>
+  <rect x="65" y="386" width="290" height="32" rx="4" class="btn-danger"/>
+  <text x="145" y="407" class="btn">Cancelar reserva</text>
+  <text x="65" y="432" class="muted">(com confirmação "Sim, cancelar / Não, voltar")</text>
+
+  <rect x="50" y="450" width="320" height="130" rx="8" class="card-muted"/>
+  <text x="65" y="474" class="label" font-weight="bold" fill="#555">João Souza</text>
+  <rect x="270" y="458" width="90" height="18" rx="9" fill="#e5e7eb" stroke="#999"/>
+  <text x="278" y="471" class="badge-cancel">CANCELADA</text>
+  <text x="65" y="494" class="small" fill="#555">joao@email.com</text>
+  <text x="65" y="512" class="small" fill="#555">Quarto: Família | 01/07/2026 → 03/07/2026</text>
+  <text x="65" y="530" class="small" fill="#555">Valor: R$ 700,00</text>
+  <text x="65" y="560" class="muted">(sem ação)</text>
+
+  <rect x="60" y="595" width="300" height="45" rx="8" fill="#fff" stroke="#333"/>
+  <text x="80" y="615" class="small" font-weight="bold">Confirmar: "Cancelar esta reserva?"</text>
+  <text x="80" y="632" class="muted">[Não, voltar]  [Sim, cancelar]</text>
+
+  <!-- States -->
+  <text x="430" y="100" class="label" font-weight="bold">Estados e mensagens</text>
+  <rect x="430" y="115" width="320" height="80" rx="8" class="box"/>
+  <text x="450" y="140" class="small" font-weight="bold">Carregamento</text>
+  <text x="450" y="160" class="small">⏳ "Carregando reservas..."</text>
+  <text x="450" y="180" class="small" font-weight="bold">Lista vazia:</text>
+  <text x="530" y="180" class="small">"Nenhuma reserva encontrada."</text>
+
+  <rect x="430" y="210" width="320" height="120" rx="8" class="alert"/>
+  <text x="450" y="235" class="small" font-weight="bold">Erros</text>
+  <text x="450" y="255" class="small">Carregamento: "Não foi possível carregar</text>
+  <text x="450" y="272" class="small">as reservas."</text>
+  <text x="450" y="292" class="small">Ação: "Não foi possível cancelar a reserva."</text>
+  <text x="450" y="310" class="small">"Esta reserva já está cancelada."</text>
+  <text x="450" y="326" class="muted">(manter dados carregados quando possível)</text>
+
+  <rect x="430" y="345" width="320" height="55" rx="8" class="ok"/>
+  <text x="450" y="370" class="small" font-weight="bold">Sucesso (ação):</text>
+  <text x="450" y="388" class="small">"Reserva cancelada com sucesso." + atualizar item/lista</text>
+
+  <!-- Desktop table -->
+  <text x="430" y="430" class="label" font-weight="bold">Desktop (tabela)</text>
+  <rect x="430" y="445" width="690" height="210" rx="8" class="box"/>
+  <rect x="430" y="445" width="690" height="45" class="header"/>
+  <text x="450" y="473" class="label">HotelReserva   Painel   Quartos   Reservas</text>
+  <text x="1055" y="473" class="small">[Sair]</text>
+  <text x="450" y="515" class="label" font-weight="bold">Reservas</text>
+  <text x="520" y="515" class="muted">(filtros opcionais no MVP: —)</text>
+  <rect x="450" y="530" width="650" height="28" fill="#f3f4f6" stroke="#ccc"/>
+  <text x="460" y="549" class="small" font-weight="bold">Viajante | E-mail | Quarto | Check-in | Check-out | Valor | Status | Ação</text>
+  <rect x="450" y="558" width="650" height="28" fill="#fff" stroke="#eee"/>
+  <text x="460" y="577" class="small">Maria Silva | maria@email.com | Standard | 10/08/2026 | 12/08/2026 | R$ 400 | CONFIRMADA | [Cancelar]</text>
+  <rect x="450" y="586" width="650" height="28" fill="#f9fafb" stroke="#eee"/>
+  <text x="460" y="605" class="small" fill="#666">João Souza | joao@email.com | Família | 01/07/2026 | 03/07/2026 | R$ 700 | CANCELADA | —</text>
+  <text x="450" y="635" class="muted">Reservas `cancelada` visualmente distintas. Manter dados visíveis em erro quando possível.</text>
+</svg>

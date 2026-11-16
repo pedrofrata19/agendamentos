@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="760" viewBox="0 0 1100 760" font-family="Arial, Helvetica, sans-serif">
+  <style>
+    .title{font-size:22px;font-weight:bold;fill:#111}
+    .subtitle{font-size:14px;fill:#444}
+    .label{font-size:13px;fill:#222}
+    .small{font-size:12px;fill:#333}
+    .muted{font-size:12px;fill:#666}
+    .btn{font-size:12px;font-weight:bold;fill:#fff}
+    .btn-dark{font-size:12px;font-weight:bold;fill:#222}
+    .link{font-size:12px;fill:#2457b2}
+    .header{fill:#f5f5f5;stroke:#999}
+    .box{fill:#fff;stroke:#888}
+    .card{fill:#fff;stroke:#999}
+    .card-muted{fill:#f3f4f6;stroke:#999}
+    .btn-fill{fill:#2f6fed;stroke:#2457b2}
+    .btn-danger{fill:#d93025;stroke:#b42318}
+    .btn-gray{fill:#e5e7eb;stroke:#999}
+    .ok{fill:#e7f7ee;stroke:#1a7f37}
+    .alert{fill:#fdecea;stroke:#d93025}
+    .badge-ok{font-size:11px;font-weight:bold;fill:#1a7f37}
+    .badge-cancel{font-size:11px;font-weight:bold;fill:#666}
+  </style>
+  <rect width="100%" height="100%" fill="#fafafa"/>
+  <text x="30" y="40" class="title">T05 — Minhas reservas (minhas-reservas.php)</text>
+  <text x="30" y="62" class="subtitle">Viajante | Requer sessão | Objetivo: listar reservas do viajante e permitir cancelamento (F4)</text>
+
+  <!-- Mobile list -->
+  <text x="30" y="100" class="label" font-weight="bold">Mobile (listagem com sucesso de ação)</text>
+  <rect x="30" y="115" width="340" height="600" rx="18" class="box"/>
+  <rect x="30" y="115" width="340" height="50" rx="18" class="header"/>
+  <rect x="30" y="147" width="340" height="18" fill="#f5f5f5"/>
+  <text x="50" y="146" class="label">≡  HotelReserva</text>
+  <text x="250" y="146" class="small">[Nova busca]</text>
+
+  <text x="50" y="195" class="label" font-weight="bold">Minhas reservas</text>
+  <rect x="50" y="205" width="300" height="36" rx="6" class="ok"/>
+  <text x="65" y="228" class="small">✓ Reserva cancelada com sucesso.</text>
+
+  <rect x="50" y="255" width="300" height="165" rx="8" class="card"/>
+  <text x="65" y="280" class="label" font-weight="bold">Quarto Standard</text>
+  <rect x="250" y="262" width="90" height="20" rx="10" fill="#e7f7ee" stroke="#1a7f37"/>
+  <text x="258" y="276" class="badge-ok">CONFIRMADA</text>
+  <text x="65" y="302" class="small">Check-in: 10/08/2026</text>
+  <text x="65" y="320" class="small">Check-out: 12/08/2026</text>
+  <text x="65" y="338" class="small">Hóspedes: 2</text>
+  <text x="65" y="356" class="small">Total: R$ 400,00</text>
+  <rect x="65" y="370" width="270" height="32" rx="4" class="btn-danger"/>
+  <text x="145" y="391" class="btn">Cancelar reserva</text>
+
+  <rect x="50" y="435" width="300" height="135" rx="8" class="card-muted"/>
+  <text x="65" y="460" class="label" font-weight="bold" fill="#555">Suíte Família</text>
+  <rect x="250" y="442" width="90" height="20" rx="10" fill="#e5e7eb" stroke="#999"/>
+  <text x="258" y="456" class="badge-cancel">CANCELADA</text>
+  <text x="65" y="482" class="small" fill="#555">Check-in: 01/07/2026</text>
+  <text x="65" y="500" class="small" fill="#555">Check-out: 03/07/2026</text>
+  <text x="65" y="518" class="small" fill="#555">Total: R$ 700,00</text>
+  <text x="65" y="548" class="muted">(sem ação de cancelar)</text>
+
+  <!-- Confirmation modal -->
+  <rect x="60" y="585" width="280" height="110" rx="8" fill="#fff" stroke="#333"/>
+  <text x="130" y="612" class="label" font-weight="bold">Cancelar reserva?</text>
+  <text x="85" y="632" class="small">Esta ação não pode ser desfeita.</text>
+  <rect x="85" y="648" width="105" height="30" rx="4" class="btn-gray"/>
+  <text x="100" y="668" class="btn-dark">Não, voltar</text>
+  <rect x="205" y="648" width="115" height="30" rx="4" class="btn-danger"/>
+  <text x="215" y="668" class="btn">Sim, cancelar</text>
+
+  <!-- Other states -->
+  <text x="420" y="100" class="label" font-weight="bold">Outros estados</text>
+  <rect x="420" y="115" width="320" height="110" rx="8" class="box"/>
+  <text x="440" y="140" class="small" font-weight="bold">Carregamento</text>
+  <text x="440" y="160" class="small">⏳ "Carregando suas reservas..."</text>
+  <rect x="440" y="170" width="280" height="14" rx="4" fill="#e5e7eb"/>
+  <rect x="440" y="190" width="240" height="14" rx="4" fill="#e5e7eb"/>
+  <text x="440" y="218" class="muted">(skeleton/lista provisória)</text>
+
+  <rect x="420" y="240" width="320" height="120" rx="8" class="box"/>
+  <text x="440" y="265" class="small" font-weight="bold">Lista vazia</text>
+  <text x="440" y="288" class="small">"Você ainda não possui reservas."</text>
+  <rect x="440" y="305" width="170" height="32" rx="4" class="btn-fill"/>
+  <text x="475" y="326" class="btn">Buscar quartos</text>
+
+  <rect x="420" y="375" width="320" height="120" rx="8" class="alert"/>
+  <text x="440" y="400" class="small" font-weight="bold">Erros</text>
+  <text x="440" y="420" class="small">Carregamento: "Não foi possível carregar</text>
+  <text x="440" y="436" class="small">suas reservas. Tente novamente."</text>
+  <text x="440" y="456" class="small">Cancelamento: "Não foi possível cancelar..."</text>
+  <text x="440" y="472" class="small">ou "Esta reserva não pode ser cancelada."</text>
+  <text x="440" y="488" class="muted">(manter lista carregada quando possível)</text>
+
+  <!-- Desktop -->
+  <text x="420" y="525" class="label" font-weight="bold">Desktop (tabela)</text>
+  <rect x="420" y="540" width="650" height="175" rx="8" class="box"/>
+  <rect x="420" y="540" width="650" height="45" class="header"/>
+  <text x="440" y="568" class="label">HotelReserva   Buscar   Olá, Maria</text>
+  <text x="900" y="568" class="small">[Minhas reservas] [Sair]</text>
+  <text x="440" y="610" class="label" font-weight="bold">Minhas reservas</text>
+  <rect x="940" y="592" width="110" height="26" rx="4" class="btn-gray"/>
+  <text x="960" y="610" class="btn-dark">Nova busca</text>
+  <rect x="440" y="625" width="610" height="28" fill="#f3f4f6" stroke="#ccc"/>
+  <text x="450" y="644" class="small" font-weight="bold">Quarto | Check-in | Check-out | Hósp. | Total | Status | Ação</text>
+  <rect x="440" y="653" width="610" height="26" fill="#fff" stroke="#eee"/>
+  <text x="450" y="670" class="small">Standard | 10/08/2026 | 12/08/2026 | 2 | R$ 400,00 | CONFIRMADA | [Cancelar]</text>
+  <rect x="440" y="679" width="610" height="26" fill="#f9fafb" stroke="#eee"/>
+  <text x="450" y="696" class="small" fill="#666">Suíte Família | 01/07/2026 | 03/07/2026 | 4 | R$ 700,00 | CANCELADA | —</text>
+</svg>

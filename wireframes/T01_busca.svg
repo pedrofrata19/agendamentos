@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="820" viewBox="0 0 1100 820" font-family="Arial, Helvetica, sans-serif">
+  <style>
+    .title{font-size:22px;font-weight:bold;fill:#111}
+    .subtitle{font-size:14px;fill:#444}
+    .label{font-size:13px;fill:#222}
+    .small{font-size:12px;fill:#333}
+    .muted{font-size:12px;fill:#666}
+    .btn{font-size:13px;font-weight:bold;fill:#fff}
+    .btn-outline{font-size:12px;fill:#333}
+    .badge-ok{font-size:12px;fill:#1a7f37;font-weight:bold}
+    .badge-bad{font-size:12px;fill:#b42318;font-weight:bold}
+    .header{fill:#f5f5f5;stroke:#999}
+    .box{fill:#fff;stroke:#888}
+    .input{fill:#fff;stroke:#999}
+    .btn-fill{fill:#2f6fed;stroke:#2457b2}
+    .btn-gray{fill:#e5e7eb;stroke:#999}
+    .card{fill:#fff;stroke:#999}
+    .alert{fill:#fff4e5;stroke:#d97706}
+  </style>
+  <rect width="100%" height="100%" fill="#fafafa"/>
+  <text x="30" y="40" class="title">T01 — Início / Busca (index.php)</text>
+  <text x="30" y="62" class="subtitle">Público | Livre | Objetivo: buscar disponibilidade e listar resultados (F2)</text>
+
+  <!-- Mobile view -->
+  <text x="30" y="100" class="label" font-weight="bold">Mobile (estado inicial / resultados)</text>
+  <rect x="30" y="115" width="320" height="670" rx="18" class="box"/>
+  <rect x="30" y="115" width="320" height="50" rx="18" class="header"/>
+  <rect x="30" y="147" width="320" height="18" fill="#f5f5f5"/>
+  <text x="50" y="146" class="label">≡  HotelReserva</text>
+  <text x="265" y="146" class="small">[Entrar]</text>
+
+  <text x="50" y="190" class="label" font-weight="bold">Buscar quartos</text>
+  <text x="50" y="212" class="muted">Informe as datas e o número de</text>
+  <text x="50" y="228" class="muted">hóspedes para ver os quartos disponíveis.</text>
+
+  <text x="50" y="260" class="small">Check-in *</text>
+  <rect x="50" y="268" width="280" height="34" rx="4" class="input"/>
+  <text x="62" y="290" class="muted">____/____/________</text>
+  <text x="50" y="325" class="small">Check-out *</text>
+  <rect x="50" y="333" width="280" height="34" rx="4" class="input"/>
+  <text x="62" y="355" class="muted">____/____/________</text>
+  <text x="50" y="390" class="small">Nº de hóspedes *</text>
+  <rect x="50" y="398" width="280" height="34" rx="4" class="input"/>
+  <text x="62" y="420" class="small">2</text>
+
+  <rect x="50" y="450" width="280" height="40" rx="6" class="btn-fill"/>
+  <text x="160" y="475" class="btn">BUSCAR</text>
+
+  <!-- Results -->
+  <rect x="45" y="505" width="290" height="125" rx="8" class="card"/>
+  <text x="60" y="530" class="label" font-weight="bold">Quarto Standard</text>
+  <text x="60" y="548" class="small">Aconchegante, cama de casal.</text>
+  <text x="60" y="566" class="small">Capacidade: 2 | R$ 200,00/noite</text>
+  <text x="60" y="586" class="badge-ok">● Disponível</text>
+  <rect x="60" y="594" width="260" height="28" rx="4" class="btn-fill"/>
+  <text x="150" y="613" class="btn">RESERVAR</text>
+
+  <rect x="45" y="640" width="290" height="110" rx="8" class="card"/>
+  <text x="60" y="665" class="label" font-weight="bold">Suíte Família</text>
+  <text x="60" y="683" class="small">Capacidade: 4 | R$ 350,00/noite</text>
+  <text x="60" y="703" class="badge-bad">○ Esgotado no período</text>
+  <rect x="60" y="712" width="260" height="28" rx="4" class="btn-gray"/>
+  <text x="140" y="731" class="btn-outline">Reservar (desabilitado)</text>
+
+  <!-- States annotations -->
+  <text x="390" y="100" class="label" font-weight="bold">Estados e mensagens</text>
+  <rect x="390" y="115" width="300" height="70" rx="6" class="box"/>
+  <text x="405" y="138" class="small" font-weight="bold">Carregamento</text>
+  <text x="405" y="158" class="small">Botão: "Buscando disponibilidade..." (desabilitado)</text>
+  <text x="405" y="175" class="small">Área: ⏳ Buscando disponibilidade...</text>
+
+  <rect x="390" y="200" width="300" height="78" rx="6" class="box"/>
+  <text x="405" y="223" class="small" font-weight="bold">Lista vazia</text>
+  <text x="405" y="243" class="small">"Nenhum quarto encontrado para os</text>
+  <text x="405" y="260" class="small">critérios informados."</text>
+
+  <rect x="390" y="292" width="300" height="110" rx="6" class="alert"/>
+  <text x="405" y="315" class="small" font-weight="bold">Erro / Validação (valores preservados)</text>
+  <text x="405" y="336" class="small">• "O check-out deve ser posterior ao check-in."</text>
+  <text x="405" y="353" class="small">• "A data de check-in não pode ser no passado."</text>
+  <text x="405" y="370" class="small">• "Informe o número de hóspedes."</text>
+  <text x="405" y="387" class="small">• "Não foi possível realizar a busca..."</text>
+
+  <!-- Desktop view -->
+  <text x="390" y="440" class="label" font-weight="bold">Desktop (resultados em grade)</text>
+  <rect x="390" y="455" width="680" height="330" rx="8" class="box"/>
+  <rect x="390" y="455" width="680" height="45" class="header"/>
+  <text x="410" y="483" class="label">HotelReserva   Buscar</text>
+  <text x="920" y="483" class="small">[Entrar] [Criar conta]</text>
+  <rect x="410" y="515" width="640" height="45" rx="4" fill="#f9fafb" stroke="#ccc"/>
+  <text x="425" y="543" class="small">Check-in [10/08/2026]  Check-out [12/08/2026]  Hóspedes [2]</text>
+  <rect x="930" y="523" width="110" height="30" rx="4" class="btn-fill"/>
+  <text x="960" y="543" class="btn">BUSCAR</text>
+
+  <rect x="410" y="575" width="200" height="185" rx="8" class="card"/>
+  <text x="425" y="600" class="label" font-weight="bold">Quarto Standard</text>
+  <text x="425" y="620" class="small">Capacidade: 2</text>
+  <text x="425" y="638" class="small">R$ 200,00/noite</text>
+  <text x="425" y="660" class="badge-ok">● Disponível</text>
+  <rect x="425" y="715" width="170" height="30" rx="4" class="btn-fill"/>
+  <text x="475" y="735" class="btn">Reservar</text>
+
+  <rect x="625" y="575" width="200" height="185" rx="8" class="card"/>
+  <text x="640" y="600" class="label" font-weight="bold">Suíte Família</text>
+  <text x="640" y="620" class="small">Capacidade: 4</text>
+  <text x="640" y="638" class="small">R$ 350,00/noite</text>
+  <text x="640" y="660" class="badge-bad">○ Esgotado</text>
+  <rect x="640" y="715" width="170" height="30" rx="4" class="btn-gray"/>
+  <text x="670" y="735" class="btn-outline">Indisponível</text>
+
+  <rect x="840" y="575" width="200" height="185" rx="8" class="card"/>
+  <text x="855" y="600" class="label" font-weight="bold">Quarto Deluxe</text>
+  <text x="855" y="620" class="small">Capacidade: 2</text>
+  <text x="855" y="638" class="small">R$ 280,00/noite</text>
+  <text x="855" y="660" class="badge-ok">● Disponível</text>
+  <rect x="855" y="715" width="170" height="30" rx="4" class="btn-fill"/>
+  <text x="905" y="735" class="btn">Reservar</text>
+</svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620" font-family="Arial, Helvetica, sans-serif">
+  <style>
+    .title{font-size:22px;font-weight:bold;fill:#111}
+    .subtitle{font-size:14px;fill:#444}
+    .label{font-size:13px;fill:#222}
+    .small{font-size:12px;fill:#333}
+    .muted{font-size:12px;fill:#666}
+    .btn{font-size:13px;font-weight:bold;fill:#fff}
+    .link{font-size:12px;fill:#2457b2}
+    .header{fill:#f5f5f5;stroke:#999}
+    .box{fill:#fff;stroke:#888}
+    .input{fill:#fff;stroke:#999}
+    .btn-fill{fill:#2f6fed;stroke:#2457b2}
+    .alert{fill:#fdecea;stroke:#d93025}
+    .info{fill:#e8f1ff;stroke:#2f6fed}
+  </style>
+  <rect width="100%" height="100%" fill="#fafafa"/>
+  <text x="30" y="40" class="title">T02 — Login (login.php)</text>
+  <text x="30" y="62" class="subtitle">Público | Livre (redireciona se já logado) | Objetivo: autenticar usuário (F1)</text>
+
+  <!-- Mobile -->
+  <text x="30" y="100" class="label" font-weight="bold">Mobile (erro / acesso restrito)</text>
+  <rect x="30" y="115" width="340" height="460" rx="18" class="box"/>
+  <rect x="30" y="115" width="340" height="50" rx="18" class="header"/>
+  <rect x="30" y="147" width="340" height="18" fill="#f5f5f5"/>
+  <text x="50" y="146" class="label">≡  HotelReserva</text>
+
+  <text x="55" y="200" class="label" font-weight="bold" font-size="18">Entrar</text>
+  <rect x="55" y="215" width="290" height="52" rx="6" class="alert"/>
+  <text x="70" y="238" class="small" font-weight="bold">! E-mail ou senha inválidos.</text>
+  <text x="70" y="255" class="muted">(ou: "Faça login para continuar.")</text>
+
+  <text x="55" y="295" class="small">E-mail *</text>
+  <rect x="55" y="303" width="290" height="36" rx="4" class="input"/>
+  <text x="68" y="326" class="small">maria@email.com</text>
+  <text x="55" y="360" class="small">Senha *</text>
+  <rect x="55" y="368" width="290" height="36" rx="4" class="input"/>
+  <text x="68" y="391" class="muted">•••••••• (não preservada)</text>
+
+  <rect x="55" y="425" width="290" height="42" rx="6" class="btn-fill"/>
+  <text x="170" y="451" class="btn">ENTRAR</text>
+  <text x="55" y="495" class="small">Ainda não tem conta?</text>
+  <text x="190" y="495" class="link">Criar conta</text>
+  <text x="55" y="520" class="link">Voltar para a busca</text>
+
+  <rect x="55" y="535" width="290" height="28" rx="4" fill="#e5e7eb" stroke="#999"/>
+  <text x="140" y="554" class="small">Carregando: "Entrando..."</text>
+
+  <!-- Desktop -->
+  <text x="420" y="100" class="label" font-weight="bold">Desktop (estado padrão)</text>
+  <rect x="420" y="115" width="550" height="460" rx="8" class="box"/>
+  <rect x="420" y="115" width="550" height="45" class="header"/>
+  <text x="440" y="143" class="label">HotelReserva   Buscar</text>
+  <text x="860" y="143" class="small">[Criar conta]</text>
+
+  <rect x="545" y="200" width="300" height="320" rx="8" class="box"/>
+  <text x="650" y="235" class="label" font-weight="bold" font-size="18">Entrar</text>
+  <text x="570" y="265" class="small">E-mail *</text>
+  <rect x="570" y="273" width="250" height="34" rx="4" class="input"/>
+  <text x="570" y="330" class="small">Senha *</text>
+  <rect x="570" y="338" width="250" height="34" rx="4" class="input"/>
+  <rect x="570" y="395" width="250" height="40" rx="6" class="btn-fill"/>
+  <text x="665" y="420" class="btn">ENTRAR</text>
+  <text x="590" y="455" class="link">Criar conta</text>
+  <text x="700" y="455" class="link">Voltar para a busca</text>
+
+  <!-- Behavior notes -->
+  <rect x="420" y="520" width="550" height="55" rx="6" class="info"/>
+  <text x="440" y="543" class="small" font-weight="bold">Sucesso (sem tela persistente):</text>
+  <text x="440" y="560" class="small">Viajante → destino pretendido / T01 / T05.  Admin → T06 (Painel).</text>
+</svg>

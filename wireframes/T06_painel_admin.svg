@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="620" viewBox="0 0 1050 620" font-family="Arial, Helvetica, sans-serif">
+  <style>
+    .title{font-size:22px;font-weight:bold;fill:#111}
+    .subtitle{font-size:14px;fill:#444}
+    .label{font-size:13px;fill:#222}
+    .small{font-size:12px;fill:#333}
+    .muted{font-size:12px;fill:#666}
+    .btn{font-size:13px;font-weight:bold;fill:#fff}
+    .header{fill:#f5f5f5;stroke:#999}
+    .box{fill:#fff;stroke:#888}
+    .card{fill:#fff;stroke:#999}
+    .btn-fill{fill:#2f6fed;stroke:#2457b2}
+    .alert{fill:#fdecea;stroke:#d93025}
+  </style>
+  <rect width="100%" height="100%" fill="#fafafa"/>
+  <text x="30" y="40" class="title">T06 — Painel do administrador (admin/index.php)</text>
+  <text x="30" y="62" class="subtitle">Admin | Requer sessão (perfil admin) | Objetivo: ponto de entrada do admin (F5)</text>
+
+  <!-- Mobile -->
+  <text x="30" y="100" class="label" font-weight="bold">Mobile</text>
+  <rect x="30" y="115" width="340" height="460" rx="18" class="box"/>
+  <rect x="30" y="115" width="340" height="50" rx="18" class="header"/>
+  <rect x="30" y="147" width="340" height="18" fill="#f5f5f5"/>
+  <text x="50" y="146" class="label">≡  Painel  Quartos  Reservas</text>
+  <text x="300" y="146" class="small">[Sair]</text>
+
+  <text x="55" y="200" class="label" font-weight="bold" font-size="18">Painel do administrador</text>
+  <text x="55" y="222" class="muted">Bem-vindo, Admin.</text>
+
+  <rect x="55" y="245" width="290" height="130" rx="10" class="card"/>
+  <text x="75" y="275" class="label" font-weight="bold">🏨 Gerenciar quartos</text>
+  <text x="75" y="298" class="small">Cadastre, edite e ative/desative quartos.</text>
+  <text x="75" y="318" class="muted">Quartos ativos: 5 (opcional)</text>
+  <rect x="75" y="332" width="250" height="34" rx="6" class="btn-fill"/>
+  <text x="170" y="354" class="btn">ABRIR</text>
+
+  <rect x="55" y="395" width="290" height="130" rx="10" class="card"/>
+  <text x="75" y="425" class="label" font-weight="bold">📋 Gerenciar reservas</text>
+  <text x="75" y="448" class="small">Visualize e cancele reservas.</text>
+  <text x="75" y="468" class="muted">Confirmadas: 12 (opcional)</text>
+  <rect x="75" y="482" width="250" height="34" rx="6" class="btn-fill"/>
+  <text x="170" y="504" class="btn">ABRIR</text>
+
+  <!-- States -->
+  <text x="420" y="100" class="label" font-weight="bold">Estados</text>
+  <rect x="420" y="115" width="300" height="70" rx="6" class="box"/>
+  <text x="440" y="140" class="small" font-weight="bold">Carregamento (se houver contagens)</text>
+  <text x="440" y="160" class="small">⏳ "Carregando painel..."</text>
+
+  <rect x="420" y="200" width="300" height="100" rx="6" class="alert"/>
+  <text x="440" y="225" class="small" font-weight="bold">Erro</text>
+  <text x="440" y="245" class="small">"Não foi possível carregar informações</text>
+  <text x="440" y="262" class="small">do painel."</text>
+  <text x="440" y="282" class="small" font-weight="bold">Atalhos de navegação permanecem visíveis.</text>
+
+  <rect x="420" y="315" width="300" height="55" rx="6" class="box"/>
+  <text x="440" y="340" class="small" font-weight="bold">Lista vazia:</text>
+  <text x="520" y="340" class="small">não se aplica; contagens = 0 exibem "0".</text>
+
+  <!-- Desktop -->
+  <text x="420" y="400" class="label" font-weight="bold">Desktop</text>
+  <rect x="420" y="415" width="600" height="160" rx="8" class="box"/>
+  <rect x="420" y="415" width="600" height="45" class="header"/>
+  <text x="440" y="443" class="label">HotelReserva   Painel   Quartos   Reservas</text>
+  <text x="955" y="443" class="small">[Sair]</text>
+  <text x="620" y="490" class="label" font-weight="bold">Painel do administrador</text>
+  <rect x="460" y="505" width="240" height="55" rx="8" class="card"/>
+  <text x="480" y="528" class="small" font-weight="bold">Gerenciar quartos</text>
+  <text x="480" y="546" class="muted">Ativos: 5  [Abrir]</text>
+  <rect x="740" y="505" width="240" height="55" rx="8" class="card"/>
+  <text x="760" y="528" class="small" font-weight="bold">Gerenciar reservas</text>
+  <text x="760" y="546" class="muted">Confirmadas: 12  [Abrir]</text>
+</svg>
